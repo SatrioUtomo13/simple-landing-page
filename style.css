@@ -99,7 +99,7 @@ h1{
         display: none;
     }
     .container{
-        padding-top: 72px;
+        padding-top: 5vh;
         padding-left: 89px;
     }
     nav{
@@ -109,7 +109,7 @@ h1{
         width: 60%;
     }
     nav ul li{
-        font-size: 24px;
+        font-size: calc(24px - 0.8vw);
     }
     .container h1{
         font-size: 15vw;
@@ -117,6 +117,7 @@ h1{
     #second{
         top: 20%;
         transform: translateX(-70%) rotate(15deg);
+        max-width: 20vh;
     }
     .readMore{
         width: 180px;
