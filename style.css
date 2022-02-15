@@ -85,6 +85,9 @@ h1{
     top: 25%;
     right: 70%;
 }
+.mobile, span{
+    display: none;
+}
 
 /* tablet view */
 @media screen and (max-width:834px){
@@ -132,12 +135,30 @@ h1{
 @media screen and (max-width:414px){
     body{
         background:url(asset/img/background-hp.svg);
-        /* background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 100vh; */
     }
     #second, nav, .readMore{
         display: none;
+    }
+    .container{
+        padding-left: 40px;
+    }
+    .container p:nth-child(3){
+        display: none;
+    }
+    .container .mobile{
+        display: block;
+        color: black;
+    }
+    span{
+        display: flex;
+        position: absolute;
+        width: 50px;
+        background: black;
+        border-radius: 50%;
+        height: 50px;
+        right: 8vw;
+        top: 8vh;
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+        justify-content: end;
     }
 }
