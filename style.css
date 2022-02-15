@@ -86,7 +86,7 @@ h1{
     right: 70%;
 }
 
-/* responsive tablet */
+/* tablet view */
 @media screen and (max-width:834px){
     body{
         background: url(asset/img/background-tablet.svg);
@@ -125,5 +125,19 @@ h1{
     }
     .readMore img{
         display: block;
+    }
+}
+
+/* mobile view */
+@media screen and (max-width:414px){
+    body{
+        background:url(asset/img/background-hp.svg);
+        /* background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh; */
+    }
+    #second, nav, .readMore{
+        display: none;
     }
 }
